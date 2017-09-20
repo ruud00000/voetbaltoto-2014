@@ -1,0 +1,62 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="nb-NO" lang="nb-NO">
+<head>
+	<title></title>
+	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+    <style type="text/css">
+        .hidden{
+            position: absolute;
+	        left: -1000px;
+	        top: -4000px;
+        }
+    </style>	
+<script type="text/javascript">
+var n = 0;
+var id = 0;
+var timesToTry = 5;
+function LoadTree()
+{
+	n++;
+	if ( id != 0 )
+	{
+		clearTimeout(id);
+		id = 0;
+	}
+	if ( navigator.userAgent.indexOf("Safari") >= 0 )
+	{
+		if ( n == 1 )
+		{
+			id = window.setTimeout( "LoadTree()", 1000 );
+			return;
+		}
+		else if (n == 2)
+		{
+			document.getElementById('tree').className = '';	
+		}
+	}
+
+	var frame = null;
+	frame = parent.frames["treemenu"];
+	if ( frame )
+	{
+		frame.location.href = "treemenu.aspx";
+	}
+	else
+	{
+		if ( 0 == id && n < timesToTry )
+			id = window.setTimeout( "LoadTree()", 500 );
+	}
+	if ( n == timesToTry )
+	{
+		document.getElementById('tree').className = '';
+		n = 0;
+	}
+}
+</script>
+</head>
+<body onLoad="LoadTree();">
+	<div id="tree" class="hidden">
+		<a href="javascript:LoadTree();">Show tree</a>
+	</div>
+</body>
+</html>

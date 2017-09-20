@@ -1,0 +1,1508 @@
+/*
+-----------------------------------------------------
+CSS name: 	It's:Learning v3 -  User Custom add-on styles
+Version:	13.06.05
+-----------------------------------------------------
+*/
+
+/*
+-----------------------------------------------------
+Contents:
+-Universal style
+
+-PageType - Help
+	-Contextual(SiteBanner) PageComponent- Help
+-PageType - Login
+-PageType - TreeMenu
+
+-PageComponent - AlertBoxes
+-PageComponent - BackNav
+-PageComponent - Banner
+-PageComponent - CategoryBox
+-PageComponent - Container
+-PageComponent - ExpandChoice
+-PageComponent -
+	- Contextual(Form) PageComponent - Wizard
+-PageComponent - FormTable
+-PageComponent - ImportantLink
+-PageComponent - InputForm
+-PageComponent - NewsList
+	-Contextual(NewsList) PageComponent - HeadingAndNavigation
+-PageComponent - Progressbar
+-PageComponent - Section
+-PageComponent - SimpleBox
+-PageComponent - TableListing
+-PageComponent - TableLayout1
+-PageComponent - TableSimple
+-PageComponent - TaskPane
+-PageComponent - Toolbar & ToolbarBottom
+-PageComponent - ToolbarListContainer
+	-Contextual(TableListing) & Contextual(Minilisting) PageComponent - TableCellSeperator
+-PageComponent - UserInput
+
+Size and color - General settings for size and color of the different parts of the system
+
+-----------------------------------------------------
+*/
+
+/* Universal style - style for HTML-elements without classes */
+
+body{
+	background: #EEE url(top_color_under_menu.gif);
+	margin: 5px 30px 30px 10px;
+	padding: 0;
+}
+
+a, a:active, a:focus, a:hover, a:link, a:visited{
+	color : #02397D;
+}
+
+/* END Universal style  */
+
+/* PageType - Help */
+.help{
+	margin: 0;
+	padding: 0;
+}
+
+	/* Contextual(SiteBanner) PageComponent- Help */
+		.help .sitebanner{
+			background: url(top_background_fill.gif) repeat-x top;
+			margin-bottom: 10px;
+		}
+
+		.help .sitebanner div{
+			background: url(top_background_sun.jpg) no-repeat top left;
+		}
+
+		.help .sitebanner div img{
+			margin: 20px 20px 20px 15px;
+		}
+
+		.help h1{
+			color: #555;
+			position: absolute;
+			font-size: 2em;
+			font-style: italic;
+			top: 0;
+			left: 0;
+			margin: 24px 0 0 190px;
+		}
+
+		.help .search{
+			font-size: .8em;
+			font-weight: bold;
+			position : absolute;
+			right: 10px;
+			top: 12px;
+		}
+
+
+	/* END Contextual(SiteBanner) PageComponent- Help  */
+
+/* END PageType - Help */
+
+/* PageType - Login */
+
+.login{
+	background: White;
+	margin: 0 0 20px 0;
+	padding: 0;
+}
+
+.login h1{
+	text-align: center;
+}
+
+.login .copyright p{
+	text-align: center;
+}
+
+.login .logincontainer{
+	background: #ECF6FF;
+	border: 1px solid #8CC7FF;
+	margin-bottom: 15px;
+	padding: 10px;
+}
+
+.login .logincontainer label, .login .logincontainer input, .login .logincontainer select{
+	display: block;
+}
+
+
+.login .logincontainer input{
+	margin-bottom: .3em;
+}
+
+
+.login .containerbox1{
+	margin-right: 0;
+}
+
+.login .formrow label{
+	background: transparent;
+}
+
+.login div.formrow label{
+	text-align: right;
+	width: 210px;
+}
+
+.login .formbuttons{
+	padding: 0;
+}
+
+.login ul.loginchoice{
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	top: 20px;
+	right: 10px;
+}
+
+.login ul.loginchoice li{
+	list-style-type: none;
+	margin-bottom: 4px;
+	width: 200px;
+}
+
+.login ul.loginchoice li select{
+	margin-left: 3px;
+	width: 190px;
+}
+
+
+
+.login .containerbox1 p, .login p{
+	padding: 0;
+	margin: 0;
+}
+
+
+.login p{
+	margin-bottom: 10px;
+}
+
+
+.login .containerbox1{
+	margin: 0 15px 0 300px;
+}
+
+.login .containerbox1 h1{
+	background: none;
+}
+
+
+
+
+
+
+	/* Contextual PageComponent(Login) - LoginFloatContainer*/
+		.login .loginfloatcontainer{
+			position: absolute;
+			left: 15px;
+			top: 101px;
+			width: 275px;
+		}
+
+		.login .loginfloatcontainer .containerbox1{
+			margin: 0;
+		}
+
+	/* END Contextual PageComponent(Login) - LoginFloatContainer*/
+
+
+	/* Contextual PageComponent(Login) - SiteBanner */
+		.login .sitebanner{
+			background: url(top_background_fill.gif) repeat-x top;
+			margin-bottom: 10px;
+		}
+
+		.login .sitebanner div{
+			background: url(top_background_sun.jpg) no-repeat top left;
+		}
+
+		.login .sitebanner div img{
+			margin: 20px 20px 20px 15px;
+		}
+
+	/* END Contextual PageComponent(Login) - SiteBanner */
+
+
+
+/* END PageType - Login */
+
+
+/* PageType - TreeMenu */
+
+.treemenu{
+	background-color: #EEE;
+	padding: 0;
+	margin: 5px 0 0 5px;
+}
+
+.treemenu li.selected span, .treemenu h1.selected span, .treemenu tr.selected td span{
+	background: #ECF6FF;
+	border: 1px solid #8CC7FF;
+	padding: 0 2px;
+}
+
+.treemenu li.selected span span{
+	border: none;
+	padding: 0;
+}
+
+.treemenu li img, .treemenu tr img{
+	vertical-align: bottom;
+}
+
+.treemenu div.frame{
+	margin: 5px;
+	padding: 0 0 10px 0;
+	background-color: White;
+	border: 1px solid #CECFCE;
+}
+
+.treemenu h1{
+	background-color: #F8F8F8;
+	border-bottom: 1px solid #CECFCE;
+	padding: 2px 5px;
+}
+
+.treemenu ul.links{
+	padding-bottom: 10px;
+	border-bottom: 1px solid #CECFCE;
+}
+
+.treemenu .tree{
+	border-top: 1px solid #CECFCE;
+	padding: 5px;
+}
+
+/* END PageType - TreeMenu */
+
+
+/* PageComponent - AlertBoxes */
+
+.alertstop, .alertwarning, .alertok, .tip{
+	padding-left: 5px;
+}
+
+.alertstop p, .alertwarning p, .alertok p, .tip p{
+	display: inline;
+	margin: 0;
+	text-align: left;
+	vertical-align: middle;
+}
+
+
+.alertstop p img, .alertwarning p img, .alertok p img, .tip p img{
+	vertical-align: middle;
+	margin-right: 5px;
+}
+
+
+/* END PageComponent - AlertBoxes */
+
+/* PageComponent - BackNav */
+
+.backnav{
+	margin-left: 10px;
+}
+
+.backnav p{
+	margin: 0;
+}
+
+/* END PageComponent - BackNav */
+
+/* PageComponent - Banner */
+
+#banner{
+	background : transparent url(top_background_fill.gif) repeat-x top left;
+}
+
+#banner div{
+	background : transparent url(top_background_sun.jpg) no-repeat top left;
+}
+
+#banner select{
+	border: 1px solid #FF8204;
+}
+
+#banner a, #banner a:active, #banner a:visited, #banner a:link{
+	color: #333;
+	font-weight: bold;
+}
+
+#banner a:hover{
+	text-decoration: none;
+}
+
+#banner .area{
+	top : 2.4em;
+	right: 10px;
+	left : auto;
+}
+
+#banner .area select{
+	width: 260px;
+}
+
+#banner .chat{
+	position : absolute;
+	right : 20px;
+	top : 4.2em;
+}
+
+#banner .community{
+	position : absolute;
+	right : 140px;
+	top : 16px;
+}
+
+#banner .crumbs{
+	left: 10px;
+	position: absolute;
+	font-weight: bold;
+	top : 8.6em;
+}
+
+#banner .crumbs a{
+	font-weight : normal;
+}
+
+#banner .inbox{
+	right : 8px;
+	top : 4.2em;
+}
+
+#banner .help{
+	font-size : .9em;
+	position : absolute;
+	right : 70px;
+	top : 16px;
+}
+
+#banner .help img{
+	margin: 0 5px 0 0;
+	vertical-align: bottom;
+	display: none;
+}
+
+#banner .logo{
+	/*background: url(logo.gif) no-repeat 19px 15px;*/
+	margin: 0;
+	padding : 14px 0 10px 19px;
+	position: relative;
+}
+#banner .logo img{
+	/*visibility: hidden; */
+	height: 47px;
+}
+
+/* Text colour in top banner*/
+#banner .logout, #banner .logout a, #banner .help, #banner .help a{
+	color : #000000;
+	font-weight : bold;
+}
+/* END Text colour in top banner*/
+
+#banner .logout{
+	font-size : .9em;
+	right : 10px;
+	top : 16px;
+}
+
+#banner .messenger{
+	right : 60px;
+	top : 4.2em;
+}
+
+
+
+	/* Contextual(TopMenu) PageComponent - ExternalLinks */
+	#banner .name{
+		background: transparent;
+		color: #444;
+		font-weight: bold;
+		left: auto;
+		position: absolute;
+		right: 10px;
+		top: 4.2em;
+	}
+
+	#banner .name li{
+		display: inline;
+		margin-left: 10px;
+	}
+
+	#banner .name a{
+		text-decoration: none;
+	}
+
+		#banner .name a span{
+		text-decoration: underline;
+	}
+
+	/* END Contextual(TopMenu) PageComponent - ExternalLinks */
+
+
+	/* Contextual(TopMenu) PageComponent - Navigation */
+	#banner .navigation{
+		padding-bottom: 50px;
+		background: transparent url(top_color_under_menu.gif) repeat-x bottom left;
+	}
+
+	#banner .navigation div{
+		border-bottom: 1px solid #858A8E;
+		padding: 0 20px .42em 20px;
+	}
+
+	#banner .navigation a, #banner .navigation a:hover, #banner .navigation a:link, #banner .navigation a:visited {
+		background: url(topnavi_unselected1.gif) no-repeat left top transparent;
+		border: 0 none;
+		color: #444;
+		float: left;
+		font-weight: bold;
+		font-size: .9em;
+		height: 1.9em;
+		margin: 0;
+		padding: 4px 1px 0 3px;
+		text-decoration: none;
+	}
+
+	#banner .navigation img{
+		vertical-align: middle;
+	}
+
+	#banner .navigation ul li a:hover{
+		background: url(topnavi_unselected1.gif) no-repeat left top transparent;
+		border: 0 none;
+	}
+
+	#banner .navigation ul {
+		background: none transparent;
+		border: 0 none;
+		display:inline;
+	}
+
+	#banner .navigation ul li {
+		background:url(topnavi_unselected2.gif) no-repeat right top;
+		border: 0 none;
+		border-bottom: 1px solid #858A8E;
+		float:left;
+		margin: 0 3px 0 0;
+		padding: 0 3px 0 0;
+		}
+
+
+
+	#banner .navigation li.selected a, #banner .navigation li.selected a:hover, #banner .navigation li.selected a:link, #banner .navigation li.selected a:visited {
+		background: url(topnavi_selected1.gif) no-repeat left top transparent;
+	}
+
+	#banner .navigation ul li.selected a:hover{
+		background: url(topnavi_selected1.gif) no-repeat left top transparent;
+	}
+
+
+	#banner .navigation ul li.selected{
+		background:url(topnavi_selected2.gif) no-repeat right top;
+		border-bottom: 1px solid #EEE;
+	}
+
+	/* Contextual(TopMenu) PageComponent - Search */
+	#banner .search{
+		position : absolute;
+		right : 280px;
+		top : 2.4em;
+	}
+
+
+	/* END Contextual(TopMenu) PageComponent - Search */
+
+/* END PageComponent - Banner */
+
+
+
+/* PageComponent - CategoryBox */
+
+.categorybox{
+	background-color: transparent;
+	border : 0 none;
+	margin: 0 0 0 1px;
+	padding : 0;
+}
+
+.categorybox dl{
+	margin : 0 0 0 20px;
+}
+
+.categorybox dl dt{
+	font-family : "Trebuchet MS", Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-weight: bold;
+}
+
+.categorybox a{
+	font-weight : bold;
+}
+
+.categorybox dl dd a, .categorybox dl dd a:active, .categorybox dl dd a:visited{
+	color : #3366CC;
+}
+
+.categorybox dl dd a:hover{
+	color : #000;
+}
+
+
+.categorybox a.alternativelinkcolor, .categorybox a.alternativelinkcolor:active, .categorybox a.alternativelinkcolor:link, .categorybox a.alternativelinkcolor:visited {
+	color : #009900;
+	padding-left : 1em;
+}
+
+.categorybox a.alternativelinkcolor:hover{
+	color : #000;
+}
+
+.categorybox h2.skin{
+	background : White url(box_heading.gif) bottom left repeat-x;
+	color: Black;
+	display: block;
+	font-family : Arial, Helvetica, sans-serif;
+	font-size: .8em;
+	font-weight: bold;
+	margin: 2px 2px 10px 2px;
+	padding: 1px 10px;
+	position: relative;
+	top: auto;
+}
+
+.splitscreenleft .categorybox{
+	margin-left: 15px;
+}
+
+.splitscreenright{
+	padding-right : 15px;
+}
+
+.splitscreen .splitscreenleft, .splitscreen .splitscreenright{
+	margin: 0 2px 0 0;
+	padding-bottom: 0;
+}
+
+/* END PageComponent - CategoryBox */
+
+
+/* PageComponent - Container */
+/* The numbers 1, 2, 3 and 4 refers to the structual placement of the containerboxes in the HTML code, where 1 is the outer one. */
+/* There is allso a special rule for h2 in a standalonepage*/
+
+.containerbox1 h1.skin, body.stanadalone .containerbox1 h2.skin{
+	background : url(h1_background.jpg) no-repeat 0 8px;
+	color: #340049;
+	margin: 5px 0 20px 0;
+	padding: 0;
+}
+
+
+
+.containerbox1 h2.skin{
+	background : White url(box_heading.gif) bottom left repeat-x;
+	color: Black;
+	font-size: .8em;
+	font-weight: bold;
+	margin: 2px 2px 10px 2px;
+	padding: 1px 10px;
+}
+
+.containerbox1 .containerbox2{
+	background : none;
+}
+
+.containerbox1 .containerbox3{
+	background : none;
+}
+
+.containerbox1 .containerbox4{
+	background : none;
+	padding: 3px 10px 15px 10px;
+}
+
+.containerbox1{
+	background : White none;
+	border: 1px solid #CECFCE;
+}
+
+/* END PageComponent - Container */
+
+
+/* PageComponent - Expanded */
+
+
+	/* Contextual - (ExpandedChoice) - PageComponent Expanded */
+	.expandchoice .expanded{
+		background: #ECF6FF;
+		border: 1px solid #8CC7FF;
+	/* 	background: #FFFFF7;
+		border: 1px solid #EBD4B8;*/
+
+	}
+
+	/* This rule needs to be inserted to get around a fault in IE-s rendering*/
+	.expandchoice .expanded input.radio{
+		background: transparent;
+	}
+	/* END Contextual - (ExpandedChoice) - PageComponent Expanded */
+
+/* END PageComponent - Expanded */
+
+/* PageComponent FlexiToolbar */
+.flexitoolbarbottomright{
+	background : url(flexitoolbar_right_bottom.gif) no-repeat bottom right;
+}
+
+.flexitoolbarbottomleft{
+	background : url(flexitoolbar_left_bottom.gif) no-repeat bottom left;
+}
+
+.flexitoolbartopleft{
+	background : url(flexitoolbar_left_top.gif) no-repeat top left;
+}
+
+.flexitoolbartopright{
+	background : url(flexitoolbar_right_top.gif) no-repeat top right;
+	padding: 8px;
+}
+
+.flexitoolbartopright .toolbar{
+	background : none no-repeat;
+	border-bottom: 0 none;
+}
+
+.flexitoolbartopright .toolbar div{
+	background : none no-repeat;
+}
+
+
+.flexitoolbartopright .form{
+	background-color: White;
+	border: 1px solid #848A8C;
+	padding: 10px 20px 20px 20px;
+}
+
+/* END PageComponent FlexiToolbar */
+
+
+/* PageComponent - Form*/
+input{
+	padding-left : 2px;
+}
+
+input[type=checkbox], input[type="radio"]{
+	background-color: transparent;
+	/*border: 0px solid #6D6DA1;*/
+	}
+
+.form{
+	/*background: #E9F4FB;*/
+	padding: 5px 0 0;
+	}
+
+.formbuttons{
+	clear:both;
+	padding: 5px 0 0 205px;
+	margin-bottom: 20px;
+	}
+
+/*.formbuttons input{
+	background-color: #EFF7FF;
+	border-bottom: 3px solid #58A8ED;
+	border-left: 3px solid #D8EBFB;
+	border-right: 3px solid #94C7EF;
+	border-top: 3px solid #CCE4F9;
+	margin-right: 5px;
+	}*/
+
+div.formrow {
+	clear:both;
+	vertical-align: middle;
+	}
+
+.formrow label{
+	background-color: #EFEFEF;
+	padding: 2px 0 2px 5px;
+	margin-right: 5px;
+	}
+
+.formw span{
+	margin-top: 2px;
+	vertical-align: top;
+	}
+
+.formw span span{
+	margin-top: 0;
+}
+
+span.formw input{
+	margin-bottom: 5px;
+	}
+
+div.formrow label {
+	float: left;
+	width: 200px;
+	text-align: left;
+	position: relative;
+	}
+
+div.formrow span.formw {
+	float: left;
+	text-align: left;
+	position: relative;
+	}
+
+
+/*The following rules with fieldset are made for grouping for for example radio buttons */
+.formrow fieldset label{
+	background-color: transparent;
+	display: inline;
+	float: none;
+	padding: 0;
+	margin-right: 0;
+	margin-bottom: 5px;
+	width: auto;
+	position: relative;
+	}
+
+.formrow fieldset legend {
+	background-color: #EFEFEF;
+	float: left;
+	margin-right: 5px;
+	padding: 2px 0 2px 5px;
+	position: relative;
+	text-align: left;
+	width: 200px;
+	}
+
+.form ol{
+	font-size: 1em;
+}
+
+.form ol li.formbuttons{
+	list-style-type: none;
+	padding-left: 22px;
+}
+
+.form h2{
+	color: black;
+	background: none;
+	font-size: 1.2em;
+	padding-left: 0;
+}
+
+	/* Contextual(Form) PageComponent - Wizard */
+
+	.form ol li.step1, .form ol li.step2, .form ol li.step3, .form ol li.step4, .form ol li.step5, .form ol li.step6, .form ol li.step1_inactive, .form ol li.step2_inactive{
+		list-style-type: none;
+		padding-left: 38px;
+	}
+
+	.form ol li.step1{
+		background: url(formcategory_1.gif) no-repeat top left;
+	}
+
+	.form ol li.step2{
+		background: url(formcategory_2.gif) no-repeat top left;
+	}
+
+	.form ol li.step3{
+		background: url(formcategory_3.gif) no-repeat top left;
+	}
+
+	.form ol li.step4{
+		background: url(formcategory_4.gif) no-repeat top left;
+	}
+
+	.form ol li.step5{
+		background: url(formcategory_5.gif) no-repeat top left;
+	}
+
+	.form ol li.step6{
+		background: url(formcategory_6.gif) no-repeat top left;
+	}
+
+	/* Wizard - inactive*/
+
+	.form ol li.step1_inactive input, .form ol li.step1_inactive label, .form ol li.step1_inactive legend, .form ol li.step1_inactive .formw,
+	.form ol li.step2_inactive input, .form ol li.step2_inactive label, .form ol li.step2_inactive legend, .form ol li.step2_inactive .formw,
+	.form ol li.step3_inactive input, .form ol li.step3_inactive label, .form ol li.step3_inactive legend, .form ol li.step3_inactive .formw,
+	.form ol li.step4_inactive input, .form ol li.step4_inactive label, .form ol li.step4_inactive legend, .form ol li.step4_inactive .formw,
+	.form ol li.step5_inactive input, .form ol li.step5_inactive label, .form ol li.step5_inactive legend, .form ol li.step5_inactive .formw
+	.form ol li.step6_inactive input, .form ol li.step6_inactive label, .form ol li.step6_inactive legend, .form ol li.step6_inactive .formw{
+		color: #888;
+	}
+
+	.form ol li.step1_inactive{
+		background: url(formcategory_1_inactive.gif) no-repeat top left;
+	}
+
+	.form ol li.step2_inactive{
+		background: url(formcategory_2_inactive.gif) no-repeat top left;
+	}
+
+	.form ol li.step3_inactive{
+		background: url(formcategory_3_inactive.gif) no-repeat top left;
+	}
+
+	.form ol li.step4_inactive{
+		background: url(formcategory_4_inactive.gif) no-repeat top left;
+	}
+
+	.form ol li.step5_inactive{
+		background: url(formcategory_5_inactive.gif) no-repeat top left;
+	}
+
+	.form ol li.step6_inactive{
+		background: url(formcategory_6_inactive.gif) no-repeat top left;
+	}
+	/* END Contextual(Form) PageComponent - Wizard */
+
+
+/* END PageComponent - Form*/
+
+
+/* PageComponent - FormTable */
+.formtable{
+	/*background: #EAF4FB url(form_background.gif) no-repeat bottom right;*/
+	margin: 0;
+	padding: 10px;
+}
+
+.formtable table{
+	border-collapse: collapse;
+}
+
+.formtable table tr th{
+	background: #EFF7FF;
+	border-bottom: 2px solid White;
+	font-weight: normal;
+	padding: 4px 20px 4px 10px;
+	text-align: left;
+}
+
+.formtable td, .formtable th{
+	vertical-align: top;
+}
+
+
+.formtable table tr td{
+	background: #EFF7FF;
+	border-bottom: 2px solid White;
+	padding: 4px 5px;
+}
+
+.formtable table tr.continued td, .formtable table tr.continued th
+{
+	border-bottom: 0px none White;
+}
+
+.formtable td.fullrow
+{
+	padding: 4px 20px 4px 10px;
+}
+
+.formtable tr.buttons td{
+	background: transparent;
+}
+
+.formtable table{
+	text-align: left;
+}
+
+.formtable th.formcategory{
+	background : White url(box_heading.gif) bottom left repeat-x;
+	color: Black;
+	font-size: .8em;
+	font-weight: bold;
+	margin: 2px 2px 10px 2px;
+	padding: 1px 10px;
+	width: auto;
+}
+
+	/* The following rules are made for the instance when a table comes after a "choicegroups" list */
+	.formtable table table{
+		clear: both;
+		margin: 10px 0 0 0;
+	}
+
+	.formtable table table tr td{
+		padding: 4px 10px 4px 4px;
+	}
+
+	.formtable table table tr th{
+		padding: 0;
+	}
+
+	.formtable table table tr td, .formtable table table tr th{
+		background: transparent;
+		border-bottom: 0 none;
+		font-size: 1em;
+		margin: 0;
+	}
+
+	/* for .nttquestioncategorieseditor table */
+	.formtable .nttquestioncategorieseditor table tr td
+	{
+		border-bottom: 2px solid White;
+	}
+	.formtable .nttquestioncategorieseditor table
+	{
+		margin: 0 0 0 0;
+	}
+
+
+/* END PageComponent - FormTable */
+
+/* PageComponent - ImportantLink */
+.importantlink img{
+	margin-right: 5px;
+}
+.importantlink img, .imageuploader .importantlink span{
+	vertical-align: middle;
+}
+
+.importantlink a:hover{
+	text-decoration : none;
+}
+
+.importantlink span{
+	font-size: 1.2em;
+	font-weight: bold;
+	/*background: url(fadein.gif)*/
+}
+/* END PageComponent - ImportantLink */
+
+/* PageComponent - NewsList */
+
+	/* Contextual(NewsList) PageComponent - HeadingAndNavigation */
+	.headingandnavigation{
+		background : White url(box_heading.gif) bottom left repeat-x;
+	}
+
+	.headingandnavigation span a, .headingandnavigation span a:active, .headingandnavigation span a:hover, .headingandnavigation span a:visited{
+		color: Black;
+	}
+
+	.headingandnavigation h2.skin{
+		background : transparent none;
+	}
+	/* END Contextual(NewsList) PageComponent - HeadingAndNavigation */
+/* PageComponent - NewsList */
+
+
+/* PageComponent - Pageframe */
+.pageframe{
+	background: White;
+	margin: 0 10px 20px;
+
+}
+
+.pageframe h2{
+	background: #6D6DA1;
+}
+
+/* END PageComponent - Pageframe*/
+
+
+/* PageComponent - Pagetabs */
+.pagetabs{
+	margin: 8px 0 -1px 5px;
+	z-index: 3;
+	position: relative;
+}
+
+
+.pagetabs .aktiv{
+	border: 1px solid #CCC;
+	border-bottom: 1px solid White;
+	background: White none repeat-x;
+	font-weight: Bold;
+}
+
+.pagetabs li a, .pagetabs li a:active, .pagetabs li a:visited, .pagetabs li a:hover{
+	color: #000;
+	border: 1px solid #CCC;
+	border-bottom: 1px solid #CCC;
+	background: transparent url(internal_tabs_background.gif) repeat-x;
+}
+
+
+/* END PageComponent - Pagetabs */
+
+/* PageComponent - Progressbar */
+div.progressbar{
+	background: url(progressbar_marked.gif) no-repeat right top;
+	text-align: right;
+	width: 350px;
+	height: 60px;
+}
+
+div.progressbar div{
+	background: url(progressbar_gray.gif) no-repeat right top;
+	padding: 5px 0 10px;
+	float: right;
+
+}
+
+div.progressbar div div{
+	color: #2475AD;
+	float: right;
+	font-size: 1em;
+	font-weight: bold;
+	width: 40px;
+}
+
+/* END PageComponent - Progressbar */
+
+
+/* PageComponent - ProgressbarSmall */
+div.progressbarsmall{
+	background: url(progressbarsmall_marked.gif) no-repeat right top;
+	text-align: left;
+	width: 440px;
+	height: 25px;
+}
+
+div.progressbarsmall div{
+	background: url(progressbarsmall_gray.gif) no-repeat right top;
+	float: right;
+	padding: 0;
+}
+
+div.progressbarsmall div div{
+	color: #2475AD;
+	float: right;
+	font-size: .8em;
+	font-weight: bold;
+	padding-top: 2px;
+	width: 235px;
+}
+
+/* END PageComponent - ProgressbarSmall */
+
+/* PageComponent - Section */
+.section{
+	background: url(categorybox_corner.gif) no-repeat bottom right;
+	margin-bottom: 20px;
+	padding-bottom: 10px;
+}
+
+/*.section *{
+	margin: 0 5px 5px 5px;
+}*/
+
+.section .headingandnavigation{
+	margin: 0;
+}
+/* END PageComponent - Section */
+
+/* PageComponent - SimpleBox */
+.simplebox{
+	background: #EFF7FF;
+}
+
+/* END PageComponent - SimpleBox */
+
+
+/* PageComponent - Tablelisting */
+
+.tablelisting{
+	margin-top: 3px;
+	border: 0 none;
+}
+
+ .tablelisting table{
+	border: 0 none;
+	margin: 0;
+}
+
+.tablelisting table tr{
+	margin: 0 5px;
+}
+
+
+
+.tablelisting table tr th{
+	background-color: #EEE;
+	border: 0 none;
+	border-bottom: 1px solid #A6A6A6;
+	color : Black;
+}
+
+.tablelisting table th a, .tablelisting table th a:active, .tablelisting table th a:focus, .tablelisting table th a:hover, .tablelisting table th a:link, a:visited {
+	color : Black;
+}
+
+.tablelisting table th a.inactive, .tablelisting table th a.inactive:active, .tablelisting table th a.inactive:focus, .tablelisting table th a.inactive:hover, .tablelisting table th a.inactive:link, a.inactive:visited {
+	color : #808080; 
+}
+
+.tablelisting table .altselected td{
+	background-color: #DDEEFF;
+}
+
+.tablelisting table .selected td{
+	background-color: #FCFFD9;
+}
+
+.tablelistingAlignTop table td
+{
+    vertical-align:top;
+}
+
+
+	/* Contextual(Tablelisting) PageComponent - TableFooter */
+	.tablelisting .tablefooter{
+		background-color: #EEE;
+		border-top: 1px solid #A6A6A6;
+		font-size: .8em;
+		height: 1.8em;
+		padding: 2px 5px;
+		margin-top: 5px;
+	}
+
+	.tablelisting .tablefooter .pageindex{
+		float: left;
+	}
+
+	.tablelisting .tablefooter .pagesize{
+		float: right;
+	}
+
+	.tablelisting .tablefooter select{
+		margin-left: .5em;
+	}
+
+	/* END Contextual(Tablelisting) PageComponent - TableFooter */
+
+.tablelisting ul
+{
+    list-style:none;
+    margin:0;
+    padding:0;
+}
+
+
+.tablelisting ul li .emptytext
+{
+    font-style:italic;
+}
+
+/* END PageComponent - Tablelisting */
+
+/* PageComponent - Tablelayout1 */
+.tablelayout1{
+	width: 100%;
+}
+
+
+.tablelayout1  td{
+	vertical-align : top;
+	padding: 5px;
+}
+
+
+
+.tablelayout td{
+	vertical-align : top;
+}
+
+/* END PageComponent - Tablelayout1 */
+
+/* PageComponent - TableSimple */
+.tablesimple th{
+	background: url(toolbar_table_heading.gif) repeat-x bottom;
+	border-bottom: 0 none;
+}
+
+.tablesimple input{
+	background-color: transparent;
+	border: 0px none #6D6DA1;
+}
+
+
+.tablesimple .altselected td{
+	background-color: #DDEEFF;
+}
+
+.tablesimple .selected td{
+	background-color: #EFF7FF;
+}
+/* END PageComponent - TableSimple */
+
+
+/* PageComponent - TabsFrame*/
+
+/* IE-hack */
+/* The .pageframe value for "margin-top" is altered if you are changing the size of the tabs under .pagetabs.
+For more information see comment at .pagetabs. The "voice-family" hack is here for compensating the display error in
+Internet Explorer. IE needs 1 pixel more in margin top to display the tabs in correct distance from the
+.pageframe. */
+
+
+.tabsframe{
+	margin-top: 2px;
+   voice-family: "\"}\"";
+   voice-family:inherit;
+   margin-top: 3px;
+   z-index: 2;
+}
+
+html>body .tabsframe {
+	margin-top: 3px;
+}
+
+/* End IE-hack*/
+
+/* END PageComponent - TabsFrame*/
+
+/* PageComponent - TaskPane */
+
+.taskpane h2.skin{
+	background : #104994 url(box_heading.gif) bottom left repeat-x;
+	padding: 0 0 0 5px;
+	margin: 5px 10px;
+}
+
+
+/* END PageComponent - TaskPane */
+
+
+/* PageComponent - Toolbar & ToolbarBottom */
+.toolbar, .toolbarbottom{
+	background : White url(toolbar_background.gif) repeat-x bottom left;
+	border: 1px solid #DDD;
+	margin: 0;
+	padding: 0;
+}
+
+.toolbar div, .toolbarbottom div{
+	background : transparent none;
+	padding: 1px 5px 0;
+}
+
+.toolbar ul, .toolbarbottom ul{
+	display: inline;
+	margin: 0;
+	padding: 0;
+}
+
+.toolbar ul li, .toolbarbottom ul li{
+	display: inline;
+	list-style: none;
+	margin-left: 0;
+	padding: 3px 10px 3px 0;
+	vertical-align: middle;
+}
+
+.toolbar ul li a, .toolbar ul li a:active, .toolbar ul li a:focus, .toolbar ul li a:hover, .toolbar ul li a:link, .toolbar ul li a:visited, .toolbarbottom ul li a, .toolbarbottom ul li a:active, .toolbarbottom ul li a:focus, .toolbarbottom ul li a:hover, .toolbarbottom ul li a:link, .toolbarbottom ul li a:visited  {
+	color : #000000;
+}
+
+.toolbar img, .toolbarbottom img{
+	margin: 0 5px 0 2px;
+	vertical-align: middle;
+}
+
+.toolbar .disabled, .toolbar .disabled a, .toolbar .disabled a:hover, .toolbar .disabled a:active, .toolbar .disabled a:visited, .toolbar .disabled a:hover, .toolbarbottom .disabled, .toolbarbottom .disabled a, .toolbarbottom .disabled a:hover, .toolbarbottom .disabled a:active, .toolbarbottom .disabled a:visited, .toolbarbottom .disabled a:hover {
+	color: #9B9B9B;
+}
+
+	/* Exceptions for ToolbarBottom*/
+	.toolbarbottom{
+		background : White url(toolbarbottom_background.gif) no-repeat top right;
+	}
+
+	.toolbarbottom div{
+		background : transparent url(toolbarbottom_end.gif) no-repeat top left;
+	}
+
+
+/* END PageComponent - Toolbar & ToolbarBottom */
+
+
+
+
+/*  PageComponent - ToolbarListContainer */
+
+
+.toolbarlistcontainer .form table{
+	margin-left : 0;
+}
+
+
+/*  PageComponent - ToolbarListContainer */
+
+/* Contextual(TableListing) & Contextual(Minilisting) PageComponent - TableCellSeperator */
+	td.tablecellseperator{
+		border-left: 1px solid
+	}
+
+/* END Contextual(TableListing) & Contextual(Minilisting) PageComponent - TableCellSeperator */
+
+
+/* Size and color */
+.containerbox1 h1.skin{
+	font-size: 1.2em;
+}
+
+/* END Size and color */
+
+
+/*TEST*/
+
+.description table tr{
+	padding: 0;
+	margin: 0;
+}
+
+/* PageComponent - NTT progress bar */
+
+div.NTT_ProgressBar{
+	background: url(progressbarsmall_marked.gif) 0 0 no-repeat;
+	text-align: left;
+	width: 446px;
+	height: 25px;
+	margin-bottom: 30px;
+	margin-top: 10px;
+}
+
+div.NTT_ProgressBar div{
+	height: 25px;
+	float:left;
+}
+
+div.NTT_ProgressBar div div
+{
+	color: #2475AD;
+	float: right;
+	font-size: .8em;
+	font-weight: bold;
+	padding-top: 2px;
+	width: 235px;
+}
+
+div.NTT_ProgressBar div.empty
+{
+	background: #efefef url(progressbarsmall_gray.gif) right top no-repeat;
+	height: 25px;
+}
+
+div.NTT_ProgressBar div.print_left
+{
+	height: 22px;
+}
+
+div.NTT_ProgressBar div.print_right
+{
+	height: 20px;
+	float:left;
+}
+
+div.NTT_ProgressBar div.separator
+{
+	border: solid 1px #D3701B;
+	border-right: solid 1px #D3701B;
+	border-left: solid 1px #D3701B;
+	width: 0px;
+	height: 18px;
+	background-color: #D3701B;
+	float: left;
+	display:inline;
+	overflow: auto;
+}
+
+div.NTT_ProgressBar div.separatorText
+{
+	width: 100px;
+	float: left;
+}
+
+/* END PageComponent - NTT progress bar */
+
+/* List Online */
+.statisticsTable table
+{
+    background-color: #EFF0F0;
+    font-size: 0.8em;
+    margin-top: -8px;
+    margin-left: 3px;
+}
+
+.statisticsTable a
+{
+    text-decoration: none;
+    color: #000000;
+}
+
+.statisticsTable th
+{
+    text-align: left;
+    width: 150px;
+    background-color: #DFEEF8;
+    padding-left: 3px;
+}
+
+.statisticsTable tr
+{
+    border: solid 1px #393F3C;
+    background-color: #ffffff;
+}
+
+.toprow
+{
+    height: 25px;
+}
+
+tr.totalrow
+{
+    font-weight: bolder;
+    background-color: #DFEEF8;
+}
+
+.totalrow td
+{
+    height: 25px;
+}
+
+.statisticsTable td
+{
+    padding-left: 5px;
+}
+
+.statisticsTable td.numbercell
+{
+    text-align: right;
+    padding-right: 7px;
+}
+
+/* END List Online */
+
+/* mentor details page */
+.containerbox1 .learners-table-title h2.skin
+{
+	background : White url(box_heading.gif) bottom left repeat-x;
+	color: Black;
+	font-size: .8em;
+	font-weight: bold;
+	margin: 2px 0px 0px 0px;
+	padding: 1px 10px;
+}
+/* end of mentor details page */
+
+table.generic-table label 
+{
+    font-size:1em;
+    font-weight:normal;
+}

@@ -1,0 +1,57 @@
+/* 
+-----------------------------------------------------
+CSS name: 	It's:Learning v3 -  Extra style for Internet Explorer
+Version:	09.06.05
+-----------------------------------------------------
+*/
+
+#banner .navigation div{
+	padding: 0 20px .50em 20px;
+}
+
+.alertstop, .alertwarning, .alertok, .tip{
+	height: 1%;
+}
+
+
+.login .highlight{
+	position: relative;
+}
+
+
+.login .loginfloatcontainer{
+	top: 97px;
+}
+
+.pagetabs{
+	margin-bottom: 0;
+}
+
+.section h2{
+	height: 1.2em;
+}
+
+.treemenu{
+	margin: 3px 5px 0 0;
+}
+
+
+.userinput img{
+	position: relative;
+}
+
+.userinput table{
+	position: relative;
+}
+
+/* Not validating w3c-code, but it is implanted in Internet Explorer, thus only sent to that specific browser. */
+
+.treemenu{ 
+	scrollbar-arrow-color: #AAAAAA;
+	scrollbar-3dlight-color: #BBBBBB;
+	scrollbar-base-color: #EEEEEE;
+	scrollbar-darkshadow-color: #EEEEEE;
+	scrollbar-face-color: #EEEEEE;
+	scrollbar-highlight-color: #EEEEEE;
+	scrollbar-shadow-color: #BBBBBB;
+}
